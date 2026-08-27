@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>دعوة زفاف حسام وإسراء</title>
     <meta name="description"
-        content="يتشرف حسام وإسراء بدعوتكم لحضور حفل زفافهما يوم الجمعة ٩ أكتوبر ٢٠٢٦ في قاعة برينسيس، داخل أسواق بدر، السويس.">
+        content="يتشرف حسام وإسراء بدعوتكم لحضور حفل زفافهما يوم الخميس ١٠ سبتمبر ٢٠٢٦ في قاعة برينسيس، داخل أسواق بدر، السويس.">
     <meta name="theme-color" content="#FFFDF8">
     <meta property="og:title" content="دعوة زفاف حسام وإسراء">
     <meta property="og:description" content="يتشرف حسام وإسراء بدعوة حضراتكم لتشريف حفل زفافهما">
@@ -67,9 +67,12 @@
             font-family: var(--font-ui);
             line-height: 1.9;
             overflow-x: hidden;
-            overflow-y: hidden;
             min-height: 100vh;
             position: relative;
+        }
+
+        body.lock-scroll {
+            overflow-y: hidden !important;
         }
 
         button {
@@ -509,15 +512,13 @@
         }
 
         .ayah {
-    font-family: var(--font-quran);
-    font-size: clamp(1.1rem, 2.7vw, 1rem);
-    line-height: 2;
-    color: var(--ink);
-    text-shadow: 0 0 1px var(--ink);
-    font-weight:bold;
-}
-
-
+            font-family: var(--font-quran);
+            font-size: clamp(1.1rem, 2.7vw, 1rem);
+            line-height: 2;
+            color: var(--ink);
+            text-shadow: 0 0 1px var(--ink);
+            font-weight: bold;
+        }
 
         .invite-lead {
             font-family: var(--font-ui);
@@ -864,92 +865,89 @@
       Designer Signature
 =========================== */
 
-        .designer-signature{
-            text-align:center;
-            margin:20px auto -20px;
-            padding:0 1.25rem max(28px, env(safe-area-inset-bottom));
-            opacity:.85;
+        .designer-signature {
+            text-align: center;
+            margin: 20px auto -20px;
+            padding: 0 1.25rem max(28px, env(safe-area-inset-bottom));
+            opacity: .85;
         }
 
-        .signature-line{
-            width:70px;
-            height:2px;
-            margin:0 auto 14px;
-            background:linear-gradient(
-                to right,
-                transparent,
-                rgba(191,154,87,.9),
-                transparent
-            );
+        .signature-line {
+            width: 70px;
+            height: 2px;
+            margin: 0 auto 14px;
+            background: linear-gradient(to right,
+                    transparent,
+                    rgba(191, 154, 87, .9),
+                    transparent);
         }
 
-        .signature-name{
-            font-family:"Allura",cursive;
-            font-size:26px;
-            color:var(--gold-deep);
-            font-weight:600;
-            letter-spacing:2px;
+        .signature-name {
+            font-family: "Allura", cursive;
+            font-size: 26px;
+            color: var(--gold-deep);
+            font-weight: 600;
+            letter-spacing: 2px;
         }
 
-        .signature-tagline{
-            font-family:var(--font-ui);
-            font-size:12.5px;
-            color:var(--ink-60);
-            letter-spacing:.02em;
+        .signature-tagline {
+            font-family: var(--font-ui);
+            font-size: 12.5px;
+            color: var(--ink-60);
+            letter-spacing: .02em;
         }
 
-        .signature-cta{
-            font-family:var(--font-ui);
-            font-size:16.5px;
-            color:var(--ink-60);
-            letter-spacing:.02em;
+        .signature-cta {
+            font-family: var(--font-ui);
+            font-size: 16.5px;
+            color: var(--ink-60);
+            letter-spacing: .02em;
             margin: -5px auto -15px;
             font-weight: bold;
         }
 
-        .signature-social{
-            margin-top:14px;
-            display:flex;
-            justify-content:center;
-            gap:20px;
+        .signature-social {
+            margin-top: 14px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
         }
 
-        .signature-social a{
-            color:#b99656;
-            font-size:15px;
-            transition:.3s ease;
-            width:34px;
-            height:34px;
-            border-radius:50%;
-            display:inline-flex;
-            align-items:center;
-            justify-content:center;
-            background:var(--card);
-            border:1px solid var(--gold-20);
-            box-shadow:var(--shadow-tiny);
+        .signature-social a {
+            color: #b99656;
+            font-size: 15px;
+            transition: .3s ease;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--card);
+            border: 1px solid var(--gold-20);
+            box-shadow: var(--shadow-tiny);
         }
 
-        .signature-social a svg{
-            width:25px;
-            height:25px;
+        .signature-social a svg {
+            width: 25px;
+            height: 25px;
         }
 
-        .signature-social a:hover{
-            transform:translateY(-2px);
-            color:#8d6b2f;
-            border-color:var(--gold-35);
-            box-shadow:var(--shadow-soft);
+        .signature-social a:hover {
+            transform: translateY(-2px);
+            color: #8d6b2f;
+            border-color: var(--gold-35);
+            box-shadow: var(--shadow-soft);
         }
 
-        .signature-social a:focus-visible{
-            outline:2px solid var(--gold-deep);
-            outline-offset:3px;
+        .signature-social a:focus-visible {
+            outline: 2px solid var(--gold-deep);
+            outline-offset: 3px;
         }
-
     </style>
 </head>
 
-<body>
+<body class="lock-scroll">
     <noscript>
         <style>
             body {
@@ -1125,7 +1123,6 @@
                     </svg>
                     <p class="closing-line closing-line--lg">يشرفنا حضوركم</p>
                     <p class="closing-line">حضوركم هو أجمل هدية لنا</p>
-                    <!-- <p class="closing-line">ننتظركم بكل حب</p> -->
                     <div class="closing-monogram" aria-hidden="true">
                         <span>ح</span><span class="wax-seal__heart">♥</span><span>إ</span>
                     </div>
@@ -1134,13 +1131,12 @@
         </div>
     </main>
 
-        <footer class="designer-signature">
+    <footer class="designer-signature">
         <div class="signature-line" aria-hidden="true"></div>
         <p class="signature-name">Yousef Ahmed</p>
-        <!-- <p class="signature-tagline">تصميم وتطوير دعوات الأفراح الرقمية</p> -->
         <p class="signature-cta">لتصميم دعوتك الخاصة تواصل معي</p>
         <div class="signature-social">
-            <a href="https://wa.me/201093549214?text=مرحبًا،%20أريد%20الاستفسار%20عن%20تصميم%20دعوة%20زفاف%20إلكترونية." target="_blank" rel="noopener noreferrer"
+            <a href="https://wa.me/201093549214?text=مرحبًا،%20أريد%20الاستفسار%20عن%20تصميم%20دعوة%20زفاف%20إلكترونية." rel="noopener noreferrer"
                 aria-label="تواصل معي عبر واتساب">
                 <svg viewBox="0 0 24 24" aria-hidden="true">
                     <path fill="currentColor"
@@ -1196,8 +1192,7 @@
             }
 
             function unlockPage() {
-                document.documentElement.style.overflowY = 'auto';
-                document.body.style.overflowY = 'auto';
+                document.body.classList.remove('lock-scroll');
                 if (musicBtn) { musicBtn.classList.add('is-revealed'); }
             }
 
@@ -1212,6 +1207,12 @@
 
                     // تشغيل الصوت فور النقر لفتح الظرف
                     playAudio();
+
+                    // احتياطي لفتح الأسكرول دائماً في حال تأخر أو تعطل حدث transitionend
+                    setTimeout(function() {
+                        scene.classList.add('is-leaving');
+                        unlockPage();
+                    }, 1400);
                 });
 
                 card.addEventListener('transitionend', function (e) {
@@ -1278,7 +1279,8 @@
             }
             function pad(n) { return n < 10 ? '0' + n : '' + n; }
 
-            var weddingDate = new Date(2026, 8, 10, 19, 0, 0);
+            // التاريخ المظبوط: 10 سبتمبر 2026 - 8:00 مساءً
+            var weddingDate = new Date(2026, 8, 10, 20, 0, 0);
             var cdDays = document.getElementById('cd-days');
             var cdHours = document.getElementById('cd-hours');
             var cdMins = document.getElementById('cd-mins');
